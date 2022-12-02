@@ -28,6 +28,7 @@ jobs:
       with:
         config: apko.yaml
         tag: node:${{ steps.snapshot-date.outputs.date }}
+        archs: x86_64,aarch64
 
     - uses: actions/upload-artifact@v3
       with:
